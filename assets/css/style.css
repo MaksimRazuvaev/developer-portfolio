@@ -77,8 +77,6 @@ body {
 .footer ul li {
     display: inline-block;
     margin-left: 25px;
-    
-    
 }
 
 
@@ -123,7 +121,7 @@ p {
     header {
       background: #772014;
     }
-  }
+}
   
   @media screen and (max-width: 768px) {
     .card {
@@ -132,4 +130,4 @@ p {
     header {
       background: #8ac4ff;
     }
-  }
+}
