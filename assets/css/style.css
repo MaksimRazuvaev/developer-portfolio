@@ -30,12 +30,69 @@ body {
 
 .header nav menu {
     list-style-type: none;
-    
 }
 
 .header nav menu li {
     display: inline-block;
     margin-left: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+main > aside {
+    flex: 0 0 20%;
+    text-align: left;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
+}
+
+main aside {
+    background-color: #b9c6ae;
+    padding: 20px;
+}
+
+main > section {
+    flex: 0 0 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 5px solid blue;
+}
+
+.sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+border-style: solid;
+border-width: 1px;
+padding: 10px;
+float: left;
+width: 25%;
+}
+
+.first_card {
+    min-width: 200px;
+    flex-basis: 150%;
+    background-image: url("./assets/images/prework.png");
+}
+
+.card header {
+padding: 20px;
+font-size: 13pt;
+font-weight: bold;
+}
+
+.card img {
+width: 100%;
 }
 
 .avatar {
@@ -45,25 +102,7 @@ body {
     border-radius: 50%;
     float: left;
     margin: 3px 3px 3px 0;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  
-
-  aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
-  }
-
-  section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-  }
+}
 
 .footer{
     display: flex;
@@ -79,41 +118,6 @@ body {
     margin-left: 25px;
 }
 
-
-
-.card {
-border-style: solid;
-border-width: 1px;
-padding: 10px;
-float: left;
-width: 25%;
-}
-.card.first_card {
-    flex: 2 1 200px;
-}
-
-.card header {
-padding: 20px;
-}
-
-.card p {
-text-align: center;
-}
-
-.card img {
-width: 100%;
-}
-
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
 @media screen and (max-width: 992px) {
     .card {
       width: 50%;
@@ -123,7 +127,7 @@ p {
     }
 }
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .card {
       width: 100%;
     }
