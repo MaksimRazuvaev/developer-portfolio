@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+    justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -23,7 +24,7 @@ body {
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    /* float: right; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 } 
@@ -82,7 +83,6 @@ width: 25%;
 .first_card {
     min-width: 200px;
     flex-basis: 150%;
-    background-image: url("./assets/images/prework.png");
 }
 
 .card header {
@@ -106,6 +106,7 @@ width: 100%;
 
 .footer{
     display: flex;
+    justify-content: space-between;
     padding: 30px;
     clear: both;
 }  
@@ -125,6 +126,9 @@ width: 100%;
     header {
       background: #772014;
     }
+    .header {
+        flex-direction: row;
+    }
 }
   
 @media screen and (max-width: 768px) {
@@ -133,5 +137,23 @@ width: 100%;
     }
     header {
       background: #8ac4ff;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header nav menu li {
+        display: block;
+        /* margin-left: 2px; */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul li{
+        display: block;
+        /* margin-left: 2px; */
     }
 }
