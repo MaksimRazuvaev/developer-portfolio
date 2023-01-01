@@ -131,11 +131,13 @@ width: 100%;
 }
   
 @media screen and (max-width: 768px) {
+
     .card {
       width: 100%;
     }
     header {
       background: #8ac4ff;
+      /* font-size: 50px; */
     }
     .header {
         flex-direction: column;
@@ -143,6 +145,7 @@ width: 100%;
     }
     .header nav menu li {
         display: block;
+        font-size: 30px;
     }
 
     .footer {
@@ -152,5 +155,22 @@ width: 100%;
 
     .footer ul li{
         display: block;
+        font-size: 30px;
     }
+
+    main > aside {
+        flex: 0 0 100%;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    main > section {
+        flex: 0 0 100%;
+        border-right: 5px solid blue;
+        border-bottom: 5px solid blue;
+    }
+
+
 }
